@@ -27,37 +27,53 @@ const Footer: React.FC = () => {
             </Link>
           </div>
         </div>
-        <div className="row">
-          <div className="col-12 col-md-4">
-            <h3>Public Hours</h3>
-            <span>Available Monday - Friday 9 - 5</span>
-            {/* <Link to={"/"}>
-              <div className="image">
-                <img src={require("../assets/images/grotto-meats-logo-outline.png")} alt={"Grotto Meats Logo"}></img>
-              </div>
-            </Link> */}
+        <div className="info-wrapper">
+          <div className="info-section">
+            <span className="heading md">Public Hours</span>
+            <span className="copy">
+              We are available Monday through Friday from <strong>nine</strong> to <strong>five</strong>. Or find where it's stocked on the shelves.
+            </span>
           </div>
-          <div className="col-12 col-md-4">
-            <div className="menu">
-              <nav>
-                <ul>
-                  <li>
-                    <Link to={"/"}>Home</Link>
-                  </li>
-                  <li>
-                    <Link to={"/products"}>Products</Link>
-                  </li>
-                  <li>
-                    <Link to={"/about"}>About</Link>
-                  </li>
-                  <li>
-                    <Link to={"/wholesale"}>Wholesale</Link>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+
+          <div className="info-section">
+            <span className="heading md">Contact Us</span>
+            <span className="copy">611 N. Wallace Ave Bozeman, MT 59715</span>
+            <span className="copy">
+              <Link to={"tel:4065481438"}>(406) 548-1438</Link>
+            </span>
+            <span className="copy">
+              <Link to={"mailto:grottomeats@gmail.com"}>grottomeats@gmail.com</Link>
+            </span>
           </div>
-          <div className="col-12 col-md-4"></div>
+        </div>
+        <div className="copyright-menu">
+          <span className="copy">
+            © {new Date().getFullYear()} Grotto Meats | Site designed by <Link to={"http://www.goldblockchain.us"}>Gold Block Chain</Link>
+          </span>
+          <nav>
+            <ul>
+              <li>
+                <span className="copy">
+                  <Link to={"/"}>Home</Link>
+                </span>
+              </li>
+              <li>
+                <span className="copy">
+                  <Link to={"/products"}>Products</Link>
+                </span>
+              </li>
+              <li>
+                <span className="copy">
+                  <Link to={"/about"}>About</Link>
+                </span>
+              </li>
+              <li>
+                <span className="copy">
+                  <Link to={"/wholesale"}>Wholesale</Link>
+                </span>
+              </li>
+            </ul>
+          </nav>
         </div>
       </Section>
     </div>

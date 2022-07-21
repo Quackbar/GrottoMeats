@@ -14,16 +14,24 @@ const Header: React.FC = () => {
         <nav>
           <ul>
             <li>
-              <Link to={"/"}>Home</Link>
+              <span className="copy">
+                <Link to={"/"}>Home</Link>
+              </span>
             </li>
             <li>
-              <Link to={"/products"}>Products</Link>
+              <span className="copy">
+                <Link to={"/products"}>Products</Link>
+              </span>
             </li>
             <li>
-              <Link to={"/about"}>About</Link>
+              <span className="copy">
+                <Link to={"/about"}>About</Link>
+              </span>
             </li>
             <li>
-              <Link to={"/wholesale"}>Wholesale</Link>
+              <span className="copy">
+                <Link to={"/wholesale"}>Wholesale</Link>
+              </span>
             </li>
           </ul>
         </nav>
